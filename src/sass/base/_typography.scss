@@ -1,4 +1,16 @@
-/* typography */
+/* Typography */
+$font: "Fraunces", serif;
+
+// Body font styling vars
+$body-font-size: 120%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+
+// Display font styling vars
+$display-font: $font;
+$display-weight: 900;
+$display-spacing: 0.15em;
+$display-title-size: 4rem;
 
 @font-face {
     font-family: 'Fraunces';
@@ -12,4 +24,20 @@
     font-style: italic;
     font-weight: 100 900;
     src: url('../fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf') format('truetype');
+}
+
+.header__title {
+    font-variation-settings: "WONK" 0, "SOFT" 17.6, "opsz" 65, "wght" 400;
+    font-style: italic;
+    letter-spacing: 0.080em;
+    line-height: 1.4;
+    font-size: 50px;
+}
+
+.header__desc {
+    font-variation-settings: "WONK" 1, "SOFT" 20, "opsz" 55, "wght" 250;
+    font-style: normal;
+    letter-spacing: 0.099em;
+    line-height: 1.6;
+    font-size: 21px;
 }
